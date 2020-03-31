@@ -1,0 +1,80 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC: SURVEY FORM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Quick Survey <i class="fas fa-file-medical-alt"></i></h1>
+      </header>
+      <main id="main">
+        <div>
+          <p id="description">Please denote how we can improve our services</p>
+        </div>
+        <div class="form-container">
+          <form type="post" id="survey-form" action="">
+            <table>
+              <tr>
+                <td class="label"><label id="name-label">  * Name: </label></td>
+                <td><input type="text" required id="name" placeholder="Name" class="right-side"> </td> 
+              </tr>
+              <tr>
+                <td class="label"><label id="email-label">  * E-mail: </label></td>
+                <td><input type="email" required id="email" placeholder="Enter your email id here" class="right-side"></td>
+              </tr>
+              <tr>
+                <td class="label"><label id="number-label">  * Age: </label></td>
+                <td><input type="number" id="number" placeholder="Age" min=10 max=100 class="right-side"> </td>
+              </tr>
+              <tr>
+                <td class="label"><label id="dropdown"> * Which option correctly describes you?: </label></td>
+               <td>
+                <select class="options" name="options" id="dropdown">
+                  <option value="---"></option>
+                  <option value="single"> Single </option>
+                  <option value="married">Married</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="fifth-row">
+              <td class="label" id="radio-column"><label>* Will you refer your friends to our online health checkup: </label></td> 
+              <div id="radio-container">
+                <td class="radio1"><input type="radio" name="option" value="definitely" class="right-side">Definitely <br>
+                  <input type="radio" name="option" value="maybe" class="right-side">May be <br>
+                  <input type="radio" name="option" value="never" class="radio"> Never <br>
+                </td>
+              </div>
+            </tr>
+            <tr class="checkbox-row">
+              <td class="label" id="checkbox"><label>*Things that you would like us to improve: </label></td> <td class="input-checkbox"><input type="checkbox" value="meds" class="right-side checkbox"> Quality of our Medicines <br>
+                <input type="checkbox" value="Doctors" class="right-side"> Our Physicians <br>
+                <input type="checkbox" value="price" class="right-side"> Costs <br>
+                <input type="checkbox" value="offers" class="right-side"> Offers <br>
+                <input type="checkbox" value="cs" class="right-side"> Customer Service <br>
+              </td>
+            </tr>
+            <tr>
+
+              <td colspan="2" class="comment" >
+                <textarea name="comment" rows="8" cols="80" placeholder="comment here for any suggestions..." class="right-side"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="submit">
+                <input type="submit" id="submit" class="right-side"><br>
+              </td>
+            </tr>
+          </table>
+        </form> 
+      </div>
+    </main>
+    </div>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'>
+  </script>
+</body>
+</html>

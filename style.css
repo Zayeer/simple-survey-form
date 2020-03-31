@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Baloo Thambi 2', cursive;
+}
+
+.container {
+  color: #c9c3b1;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  line-height: 30px;
+  position: relative;
+  top: 40px;
+  border-radius: 20px; 
+  background-color: #000;
+  padding-top: 20px;
+}
+
+header {
+  color: red;
+}
+
+.fa-file-medical-alt {
+  color: red;
+}
+
+#description {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.label {
+  width: 50%;
+}
+
+input[type="text"], input[type="email"] {
+  width: 90%;
+}
+
+input[type="number"] {
+  width: 40%;
+}
+
+table {
+  height: 105vh;
+  width: 100%;
+}
+
+input {
+  border-radius: 5px;
+  border-style: none;
+  border: none;
+  padding: 5px;
+}
+
+#dropdown {
+  width: 40%;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+input[type = "checkbox"], input[type="radio"] {
+  margin-left: 10px;
+}
+
+textarea{
+  width: 90%;
+  border-radius: 5px;
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-start;
+}
+
+input[type="submit"] {
+  width: 30%;
+  font-family: 'Baloo Thambi 2', cursive; 
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
